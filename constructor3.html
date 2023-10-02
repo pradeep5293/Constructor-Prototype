@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+        function Vehicle(brand,price){
+    this.brand=brand;
+    this.price=price;
+    this.getPrice=function(){
+        return this.price;
+    }
+}
+var vehicle1=Vehicle('TATA',900000);
+console.log(vehicle1.getPrice);
+
+var vehicle2=Vehicle('Nexus',1900000);
+
+    </script>
+
+</body>
+</html>

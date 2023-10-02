@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype func</title>
+</head>
+<body>
+    <script>
+        // let arr=['Yash','pk'];
+        // let object={
+        //     name:'Yash',
+        //     city:'Vrns',
+        //     getIntro:function(){
+        //         console.log("this.name"+this.city);
+        //     }
+        // }
+
+        
+        let object={
+            name:'Yash',
+            city:'Vrns',
+            getIntro:function(){
+                console.log("this.name"+this.city);
+            }
+        }
+        let object2={
+            name:'sk',
+           state:'UP',
+        }
+        object2.__proto__=object
+
+    </script>
+</body>
+</html>

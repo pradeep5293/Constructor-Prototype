@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class property</title>
+</head>
+<body>
+    <script>
+        class Student{
+    //1.constructor method
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+        console.log("constructor function");
+    }
+    //2.prototype func
+    hello(){
+        document.write("prototype method");
+        console.log("prototype function");
+    }
+//3.static method
+    static staticMethod(){
+        console.log("static function");
+
+    }
+}
+let a=new Student("Yash",24); //1.
+a.hello();                  //2.
+Student.staticMethod();     //3.
+
+    </script>
+</body>
+</html>

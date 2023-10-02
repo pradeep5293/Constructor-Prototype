@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class inheritance</title>
+</head>
+<body>
+    <script>
+        class Vehicle{
+            constructor(doors,wheels){
+                this.doors=doors;
+                this.wheels=wheels;
+            }
+        }
+        class bus extends Vehicle{
+            constructor(doors,wheels,windows){
+                super(doors,wheels);
+                this.windows=windows;
+            }
+        }
+        var b=new bus(4,8,10);
+        console.log(b.windows);
+    </script>
+</body>
+</html>

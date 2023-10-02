@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance using classes</title>
+</head>
+<body>
+    <script>
+        class Vehicle{
+    constructor(name,price){
+
+    this.name='name';
+    this.price='Price';
+}
+getprice(){
+    return this.price;
+}
+printDetails(){
+    console.log('Vehicle ',this.name,this.price);
+}
+}
+class Car extends Vehicle{
+    constructor(price,numDoors){
+        super(900000,4)
+        this.numDoors=numDoors;
+       
+    }
+    printDetails(){
+        super.printDetails();
+        console.log('Car',this.numDoors);
+    }
+}
+var c=new Car(4);
+console.log(c);
+// let vehicle1=new Vehicle('Tata',400000);
+// let vehicle2=new Vehicle('Toyota',1400000);
+    </script>
+</body>
+</html>

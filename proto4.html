@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja-Prototype</title>
+</head>
+<body>
+    <script>
+        function Vehicle(numwheels,price){
+            this.name=name;
+            this.numwheels=numwheels;
+            this.price=price;
+        }
+        Vehicle.prototype.getPrice=function(){
+            return this.price;
+        };
+        var vehicle1=new Vehicle(4,500000);
+        var vehicle2=new Vehicle(8,2500000);
+
+    </script>
+</body>
+</html>
